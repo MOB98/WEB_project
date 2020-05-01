@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>doctor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+    body{
+
+        background-image:  url("img/364.jpg");
+        background-repeat: no-repeat ;
+        background-size:100% ;
+
+        color: #404040;
+        font-size: 20px;
+        line-height: 2;
+        font-family: 'Raleway', sans-serif; ;
+    }
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 1;
+        width: 100px;
+        top: 40px;
+        bottom: 0;
+        height: inherit;
+    }
+
+    .d-block {
+        display: block !important;
+        margin-top: 100px;
+    }
+    .header-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2000px;
+        height: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="inde.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">create bill</a>
+        <a href="show_appo.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">show Appointment</a>
+        <a href="index.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white">show my website</a>
+        <a href="show_comment.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">show comment</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">logout</a>
+    </div>
+</div>
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird ">
+            <h1 class="">Bashar Jaber</h1>
+            <p>Ophthalmologist Consultant of plastic surgery and restoration of eyes, eyelids, eye socket and tear ducts
+            <br>
+                <br>
+            email :  drbasharjaber@gmail.com
+                <br>
+
+                phone number :  +972 599988961
+
+            </p>
+            <div style="border: black solid thick ">
+
+                <h2 class="d-flex align-items-center">Opening Hours</h2>
+                <ul class="p-0 m-0">
+                    <li>Monday - Thursday <span>3:00 PM - 6:00 PM</span></li>
+                    <li>Friday <span>closed</span></li>
+                    <li>Saturday <span>10:00 am - 6:00 pm</span></li>
+                    <li>Sunday <span>10:00 AM - 2:00 PM</span></li>
+                </ul>       </div>
+        </div>
+        <div class="w3-third w3-container">
+            <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img width="250px"height="350px" src="img/dr.jpg"></p>
+
+        </div>
+      </div>
+
+<footer style="width: 100%">
+
+        <div class="w3-container w3-theme-l1">
+            <p><a href="https://www.facebook.com/DrBasharJaber/" target="_blank">facebokk</a></p>
+        </div>
+    </footer>
+
+    <!-- END MAIN -->
+</div>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
